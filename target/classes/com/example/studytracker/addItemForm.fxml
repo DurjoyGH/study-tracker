@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studytracker.AddItemFormController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/addItem.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="taskTextField" layoutX="217.0" layoutY="110.0" prefHeight="55.0" prefWidth="422.0" promptText="Task">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="descriptionTextField" alignment="TOP_LEFT" layoutX="217.0" layoutY="204.0" prefHeight="115.0" prefWidth="422.0" promptText="Description">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="saveTaskButton" layoutX="353.0" layoutY="353.0" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: #E6161F;" text="Save Task" textFill="#f7f3f3">
+         <effect>
+            <DropShadow />
+         </effect></JFXButton>
+      <JFXButton fx:id="taskButton" layoutX="617.0" layoutY="395.0" prefHeight="42.0" prefWidth="118.0" style="-fx-background-color: #177e31;" text="Task (1)" textFill="#e6efe8" visible="false">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <JFXButton fx:id="backButton" layoutX="3.0" layoutY="5.0" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #3D5AFE;" text="Go Back" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>

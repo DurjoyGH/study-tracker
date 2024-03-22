@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studytracker.ListController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/addItem.png" />
+         </image>
+      </ImageView>
+      <JFXListView fx:id="listView" layoutX="337.0" layoutY="53.0" prefHeight="394.0" prefWidth="394.0">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXListView>
+      <TextField fx:id="taskTextField" layoutX="68.0" layoutY="102.0" prefHeight="38.0" prefWidth="256.0" promptText="Task">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="descriptionTextField" alignment="TOP_LEFT" layoutX="67.0" layoutY="168.0" prefHeight="122.0" prefWidth="256.0" promptText="Description">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton fx:id="taskButton" layoutX="131.0" layoutY="319.0" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #E6161F;" text="Save Task" textFill="#f7f4f4">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <ImageView fx:id="reloadButton" fitHeight="45.0" fitWidth="43.0" layoutX="702.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/refresh-button.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="628.0" layoutY="12.0" prefHeight="31.0" prefWidth="83.0" text="Reload" textFill="#05e8c1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="backButton" layoutX="4.0" layoutY="5.0" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #3D5AFE;" text="Go Back" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect></JFXButton>
+      <JFXButton fx:id="searchButton" layoutX="134.0" layoutY="393.0" prefHeight="38.0" prefWidth="136.0" style="-fx-background-color: #E6161F;" text="Search" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="185.0" layoutY="367.0" text="Or">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

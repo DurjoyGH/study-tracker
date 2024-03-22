@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studytracker.SearchTaskController">
+   <children>
+      <ImageView fitHeight="200.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/SearchBar.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="selectDate" layoutX="77.0" layoutY="76.0" prefHeight="24.0" prefWidth="246.0" promptText="Select Date" />
+      <JFXButton fx:id="searchButton" layoutX="133.0" layoutY="127.0" prefHeight="38.0" prefWidth="134.0" style="-fx-background-color: #E6161F;" text="Search" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <Label layoutX="112.0" layoutY="35.0" prefHeight="22.0" prefWidth="172.0" text="Search Your Tasks" textFill="#3757a4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studytracker.SignUpController">
+   <children>
+      <ImageView fitHeight="511.0" fitWidth="823.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../assets/signup.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="signUpFirstName" layoutX="388.0" layoutY="86.0" prefHeight="37.0" prefWidth="366.0" promptText="First Name" />
+      <TextField fx:id="signUpLastName" layoutX="388.0" layoutY="138.0" prefHeight="37.0" prefWidth="366.0" promptText="Last Name" />
+      <TextField fx:id="signUpUsername" layoutX="388.0" layoutY="244.0" prefHeight="37.0" prefWidth="366.0" promptText="Username" />
+      <TextField fx:id="signUpInstitution" layoutX="388.0" layoutY="191.0" prefHeight="37.0" prefWidth="366.0" promptText="Institution" />
+      <JFXCheckBox fx:id="signUpCheckBoxMale" layoutX="483.0" layoutY="350.0" text="Male" />
+      <JFXCheckBox fx:id="signUpCheckBoxFemale" layoutX="571.0" layoutY="350.0" text="Female" />
+      <JFXButton fx:id="signUpButton" layoutX="502.0" layoutY="389.0" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: #E6161F;" text="Sign Up" textFill="#f2e6e6">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+      <PasswordField fx:id="signUpPassword" layoutX="388.0" layoutY="297.0" prefHeight="38.0" prefWidth="366.0" promptText="Password" />
+      <JFXButton fx:id="backButton" layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="106.0" style="-fx-background-color: #3D5AFE;" text="Go Back" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
